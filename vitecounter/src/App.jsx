@@ -15,8 +15,8 @@ function App() {
     <>
       Count Is: {count}
       <br /><br />
-      <button onClick={addValue}>Add</button><br /><br />
-      <button onClick={minusValue}>Minus</button>
+      <button onClick={addValue} disabled={count > 19}>Add</button><br /><br />
+      <button onClick={minusValue} disabled={count < 1}>Minus</button>
     </>
   )
 }
